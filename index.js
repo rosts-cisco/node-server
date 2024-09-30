@@ -8,7 +8,7 @@ const PORT = 3000;
 app.get("/", (req, res) => {
   res.header(
     "Content-Security-Policy",
-    "frame-ancestors 'self' *.ngrok.io *.slido-staging.com:* studio.staging.socio.events studio.development.socio.events integration.vidcast.io localhost:*"
+    "frame-ancestors *.ngrok.io *.slido-staging.com:* studio.staging.socio.events studio.development.socio.events integration.vidcast.io localhost:*"
   );
   res.send(TEMPLATE);
 });
